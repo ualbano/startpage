@@ -9,10 +9,11 @@ const bookmarks = [
     ],
   },
   {
-    title: "Zuhause",
+    title: "Privat",
     links: [
       { name: "Smart Home", url: "https://home.albano.xyz" },
       { name: "Cloud", url: "https://cloud.albano.xyz" },
+      { name: "Fotos", url: "https://fotos.albano.xyz" },
     ],
   },
   {
