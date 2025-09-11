@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
-  --bg: #5f4b8b;
+  --bg: #f5f5f5;
   --fg: #ffffff;
   --secondaryFg: #b3b3b3;
   --containerBg: #272727;
@@ -29,7 +29,7 @@ body {
   font-size: 3.5rem;
   font-weight: 600;
   font-family: var(--fontFamily);
-  color: var(--fg);
+  color: #272727;
   margin-bottom: 0.25em;
 }
 
