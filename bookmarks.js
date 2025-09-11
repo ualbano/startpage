@@ -1,47 +1,35 @@
 // Note: having length != 4 will mess with layout based on how the site is styled
 const bookmarks = [
   {
-    title: "Daily",
+    title: "Arbeit",
     links: [
       { name: "Inbox", url: "https://inbox.google.com" },
-      { name: "GitHub", url: "https://github.com" },
+      { name: "Kalender", url: "https://calendar.google.com/calendar/u/0/r" },
       { name: "Drive", url: "https://drive.google.com" },
     ],
   },
   {
-    title: "Media",
+    title: "Zuhause",
     links: [
-      { name: "Youtube", url: "https://youtube.com" },
-      { name: "Netflix", url: "https://netflix.com" },
-      { name: "Crunchyroll", url: "https://crunchyroll.com" },
-      {
-        name: "Amazon Prime",
-        url: "https://www.amazon.com/Amazon-Video",
-      },
+      { name: "Smart Home", url: "https://home.albano.xyz" },
+      { name: "Cloud", url: "https://cloud.albano.xyz" },
     ],
   },
   {
-    title: "Reddit",
+    title: "Nachrichten",
     links: [
-      { name: "/r/overwatch", url: "https://reddit.com/r/overwatch" },
+      { name: "Heise", url: "https://www.heise.de/newsticker/classic/" },
       {
-        name: "/r/pcmasterrace",
-        url: "https://reddit.com/r/pcmasterrace",
+        name: "Spiegel",
+        url: "https://www.spiegel.de/",
       },
-      { name: "/r/me_irl", url: "https://reddit.com/r/me_irl" },
-      {
-        name: "/r/battlestations",
-        url: "https://reddit.com/r/battlestations",
-      },
-      { name: "/r/unixporn", url: "https://reddit.com/r/unixporn" },
-      { name: "/r/news", url: "https://reddit.com/r/news" },
+      { name: "Tagesschau", url: "https://www.tagesschau.de/" },
     ],
   },
   {
-    title: "Social",
+    title: "sonstiges",
     links: [
-      { name: "Twitter", url: "https://twitter.com" },
-      { name: "Facebook", url: "https://facebook.com" },
+      { name: "QuickRef", url: "https://quickref.me/" },
     ],
   },
 ];
