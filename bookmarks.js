@@ -25,6 +25,7 @@ const bookmarks = [
         url: "https://www.spiegel.de/",
       },
       { name: "Tagesschau", url: "https://www.tagesschau.de/" },
+      { name: "Golem", url: "https://www.golem.de/ticker/" },
     ],
   },
   {
