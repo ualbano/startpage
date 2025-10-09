@@ -3,9 +3,9 @@ const bookmarks = [
   {
     title: "Arbeit",
     links: [
-      { name: "Inbox", url: "https://inbox.google.com" },
-      { name: "Kalender", url: "https://calendar.google.com/calendar/u/0/r" },
-      { name: "Drive", url: "https://drive.google.com" },
+      { name: "Inbox", url: "https://outlook.office.com/mail" },
+      { name: "Kalender", url: "https://outlook.office.com/calendar" },
+      { name: "GitLab", url: "https://gitlab.int.gecko.de/" },
     ],
   },
   {
