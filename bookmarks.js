@@ -11,8 +11,9 @@ const bookmarks = [
   {
     title: "Privat",
     links: [
-      { name: "Smart Home", url: "https://home.albano.xyz" },
+      { name: "Inbox", url: "https://mail.proton.me/" },
       { name: "Cloud", url: "https://cloud.albano.xyz" },
+      { name: "Smart Home", url: "https://home.albano.xyz" },
       { name: "Fotos", url: "https://fotos.albano.xyz" },
     ],
   },
