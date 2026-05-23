@@ -148,3 +148,41 @@ body {
 .bookmark:hover {
   color: var(--fg);
 }
+
+#hn-container {
+  width: 30%;
+  background-color: var(--containerBg);
+  padding: 1em;
+  border-radius: 3px;
+  font-family: var(--fontFamily);
+  font-size: 0.85rem;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.hn-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 0.5em;
+}
+
+.hn-link {
+  text-decoration: none;
+  color: var(--secondaryFg);
+  display: block;
+  margin: 0.5em 0em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hn-link:hover {
+  color: var(--fg);
+}
+
+@media only screen and (max-width: 960px) {
+  #hn-container {
+    width: 60%;
+  }
+}
