@@ -150,7 +150,7 @@ body {
 }
 
 #hn-container {
-  width: 30%;
+  width: 50%;
   background-color: var(--containerBg);
   padding: 1em;
   border-radius: 3px;
@@ -186,3 +186,4 @@ body {
     width: 60%;
   }
 }
+
