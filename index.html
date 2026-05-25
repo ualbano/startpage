@@ -28,6 +28,10 @@
         </div>
       </div>
       <div id="bookmark-container"></div>
+      <div id="hn-container">
+        <div class="hn-title">Hacker News</div>
+        <div class="hn-links"></div>
+      </div>
     </div>
 
     <script src="bookmarks.js"></script>
@@ -97,9 +101,31 @@
           .join("");
       }
 
+      async function fetchHackerNews() {
+        try {
+          const resp = await fetch("https://hacker-news.firebaseio.com/v0/newstories.json");
+          const ids = await resp.json();
+          const stories = await Promise.all(
+            ids.slice(0, 3).map((id) =>
+              fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then((r) => r.json())
+            )
+          );
+          const linksEl = document.querySelector("#hn-container .hn-links");
+          linksEl.innerHTML = stories
+            .map(
+              (s) =>
+                `<a class="hn-link" href="${s.url || "https://news.ycombinator.com/item?id=" + s.id}" target="_blank">${s.title}</a>`
+            )
+            .join("");
+        } catch (e) {
+          console.error("HN fetch failed", e);
+        }
+      }
+
       window.onload = () => {
         setupBookmarks();
         getWeather();
+        fetchHackerNews();
         // Set up the clock
         document.getElementById("clock").innerHTML = getTime();
         // Set clock interval to tick clock
