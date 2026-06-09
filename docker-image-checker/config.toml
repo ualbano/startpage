@@ -1,0 +1,19 @@
+# Docker images to watch.
+# Use official image names (e.g. "nginx") or full names (e.g. "myorg/myapp").
+# Tag defaults to "latest" if omitted.
+
+[[images]]
+name = "nginx"
+tag = "latest"
+
+[[images]]
+name = "postgres"
+tag = "16"
+
+[[images]]
+name = "redis"
+tag = "alpine"
+
+[[images]]
+name = "alpine"
+tag = "3.20"
